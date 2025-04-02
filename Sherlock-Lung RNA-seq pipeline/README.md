@@ -29,6 +29,7 @@ This repository provides scripts for alignment and quantification of RNA-seq dat
   sh STAR_alignment.sh -s CSP107355 -t raw -i /data/Sherlock/FASTQ -o /data/Sherlock_Lung/BAM -n 4
   ```
 
+---
 ### Step 2. Transcript quantification
 `htseq_quantification.sh` takes BAM files aligned to the genome and generate
 ### Usage:
@@ -47,3 +48,5 @@ This repository provides scripts for alignment and quantification of RNA-seq dat
 ### Example:
   ```
   sh STAR_alignment.sh -s CSP107355 -t raw -i /data/Sherlock_Lung/BAM -o/data/Sherlock_Lung/htseq -m 16g
+
+Normalization and downstream analysis will be completed in R.
