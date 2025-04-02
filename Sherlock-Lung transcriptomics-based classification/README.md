@@ -23,3 +23,18 @@ Tests the prognostic prediction in the Sherlock and GIS data set using different
 
 ---
 ## Data
+### Sherlock_RNA_clinical_data.txt
+Characteristics and clinical data of patients in the Sherlock cohort.
+### GIS_clinical_data.txt
+Characteristics and clinical data of patients in the GIS cohort.
+### Sherlock_WGS_driver_mut_fusion_bin.txt
+Driver mutations and fusions in the Sherlock cohort.
+### GIS_driver_mut_fusion_bin.txt
+Driver mutations and fusions in the GIS cohort.
+### Sherlock1+2+TCGA-LUAD_CPM_coding_xMT_Top5000_rank3_20features_prediction_dist.txt
+Predicted NS-LUAD expression subtypes and distance to the centroids of subtypes in the Sherlock cohort.
+### GIS_CPM_coding_xMT_Top5000_rank3_20features_prediction_dist.txt
+Predicted NS-LUAD expression subtypes and distance to the centroids of subtypes in the GIS cohort.
+### Sherlock_RNA_TN_GIS_info.txt
+Sample list of the Sherlock and GIS cohorts.
+
