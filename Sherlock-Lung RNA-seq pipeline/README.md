@@ -1,13 +1,13 @@
 # RNA-seq data preprocess and quantification pipeline
 
 This repository provides scripts for alignment and quantification of RNA-seq data for the Sherlock-Lung study (Genome Build: GRCh38).
-
+---
 ## Requirements  
 - Sentieon software (license required)
 - Samtools, HTSeq
 - Human reference genome: hg38 (GRCh38)
 - Transcript annotation: GENCODE v35
-
+---
 ## Workflow Overview
 ### Step 1. Alignment and quality assessment
 `STAR_alignment.sh` aligns FASTQ files from RNA-seq data to genome files using STAR and performs quality assessment using Picard Tools.
@@ -28,7 +28,6 @@ This repository provides scripts for alignment and quantification of RNA-seq dat
   ```
   sh STAR_alignment.sh -s CSP107355 -t raw -i /data/Sherlock/FASTQ -o /data/Sherlock_Lung/BAM -n 4
   ```
-
 ---
 ### Step 2. Transcript quantification
 `htseq_quantification.sh` takes BAM files aligned to the genome and generate
