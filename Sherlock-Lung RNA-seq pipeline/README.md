@@ -14,7 +14,7 @@ This repository provides scripts for alignment and quantification of RNA-seq dat
 ### Usage:
   ```
   sh STAR_alignment.sh -s <Sample_name> -t <raw/trim/plain> -i <FASTQ_folder> -o <Output_folder> -n <nthreads>
-
+  ```
 <Sample_name>: Input sample file name. The name of FASTQ file should contain Sample_name.  
 <raw/trim/plain>: Type of FASTQ files. The file names of input FASTQ should match these patterns:
   - A "raw" file ends with "1/2.fastq.gz".
@@ -27,7 +27,7 @@ This repository provides scripts for alignment and quantification of RNA-seq dat
 ### Example:
   ```
   sh STAR_alignment.sh -s CSP107355 -t raw -i /data/Sherlock/FASTQ -o /data/Sherlock_Lung/BAM -n 4
-  
+  ```
 
 - [Usage](#usage)  
 - [Features](#features)  
