@@ -1,8 +1,8 @@
 # RNA-seq data preprocess and quantification pipeline
 
-## Overview
-This repository provides scripts for alignment and quantification of RNA-seq data for the Sherlock-Lung study (Genome Build: GRCh38).
----
+## Overview  
+This repository provides scripts for alignment and quantification of RNA--seq data for the Sherlock-Lung study (Genome Build: GRCh38).
+
 ## Requirements  
 - Sentieon software (license required)
 - Samtools, HTSeq
