@@ -9,15 +9,26 @@ This repository provides scripts for alignment and quantification of RNA-seq dat
 - Transcript annotation: GENCODE v35
 
 ## Workflow Overview
-- Step 1. Alignment and quality assessment
-  `sentieon_rna_star_list.sh` takes a list of input files and generate bash commands for alignment and quality assessment steps.
-  ` Usage:
-  ```sh ~/scripts/sentieon_rna_star_list.sh \
-        -i <List_of_input_files> \
-        -d <Output_directory> \
-        -o <Output_bash_file \
-        -n <nthreads>
+### Step 1. Alignment and quality assessment
+`STAR_alignment.sh` takes a list of input files and generate bash commands for alignment and quality assessment steps.
+### Usage:
+  ```
+  sh STAR_alignment.sh -s <Sample_name> -t <raw/trim/plain> -i <FASTQ_folder> -o <Output_folder> -n <nthreads>
+
+<Sample_name>: Input sample file name. The name of FASTQ file should contain Sample_name.  
+<raw/trim/plain>: Type of FASTQ files. The file names of input FASTQ should match these patterns:
+  - A "raw" file ends with "1/2.fastq.gz".
+  - A "trim" file ends with "1/2*trimmed.fastq.gz".
+  - A "plain" file ends with "1/2.fastq".
+<FASTQ_folder>: Directory of the input FASTQ files.
+<Output_folder>: Directory of the output BAM and QC files.
+<nthreads>: Number of CPU threads.
+
+### Example:
+  ```
+  sh STAR_alignment.sh -s CSP107355 -t raw -i /data/Sherlock/FASTQ -o /data/Sherlock_Lung/BAM -n 4
   
+
 - [Usage](#usage)  
 - [Features](#features)  
 - [Configuration](#configuration)  
